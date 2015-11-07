@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PoW-t6-9NV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--时钟-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ClockViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="钟表" translatesAutoresizingMaskIntoConstraints="NO" id="EkQ-HG-O2D">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8Uz-DH-Ibs"/>
+                                    <constraint firstAttribute="width" constant="200" id="heh-NB-DQA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EkQ-HG-O2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ym9-vV-z0k"/>
+                            <constraint firstItem="EkQ-HG-O2D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s3a-0R-SPr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="时钟" id="lSG-ix-NhX"/>
+                    <connections>
+                        <outlet property="clockImageView" destination="EkQ-HG-O2D" id="ex5-qz-XXH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-39"/>
+        </scene>
+        <!--心跳-->
+        <scene sceneID="4Ln-I8-k6s">
+            <objects>
+                <viewController id="Geo-AY-fKD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4QK-sU-sqT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fbo-sZ-azd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9f5-Sv-P5k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="心跳" id="Taf-3W-HGc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="299-uZ-5dR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="598"/>
+        </scene>
+        <!--转盘-->
+        <scene sceneID="T3G-tL-fQH">
+            <objects>
+                <viewController id="xff-Tl-7Oy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qVu-2X-3mM"/>
+                        <viewControllerLayoutGuide type="bottom" id="n6F-BA-n1B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x26-i2-x23">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="转盘" id="Kil-rb-Lcd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ei-f6-iMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131" y="1235"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qf7-Vt-gV9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PoW-t6-9NV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ztq-ZP-rB3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fYu-hr-uuQ"/>
+                        <segue destination="Geo-AY-fKD" kind="relationship" relationship="viewControllers" id="TGk-7o-WO7"/>
+                        <segue destination="xff-Tl-7Oy" kind="relationship" relationship="viewControllers" id="693-QL-Qeh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eby-ew-y3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="613"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="钟表" width="200" height="200"/>
+    </resources>
+</document>
