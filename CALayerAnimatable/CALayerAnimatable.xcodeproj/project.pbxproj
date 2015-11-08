@@ -16,6 +16,8 @@
 		140EB6791BEDD07800E61A81 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB6701BEDD07800E61A81 /* ClockViewController.m */; };
 		140EB67A1BEDD07800E61A81 /* HeartbeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB6731BEDD07800E61A81 /* HeartbeatViewController.m */; };
 		140EB67B1BEDD07800E61A81 /* TurntableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB6761BEDD07800E61A81 /* TurntableViewController.m */; };
+		140EB67E1BEEE9F300E61A81 /* EVAWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB67D1BEEE9F300E61A81 /* EVAWheelView.m */; };
+		140EB6801BEEEA1000E61A81 /* EVAWheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140EB67F1BEEEA1000E61A81 /* EVAWheelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		140EB6731BEDD07800E61A81 /* HeartbeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartbeatViewController.m; sourceTree = "<group>"; };
 		140EB6751BEDD07800E61A81 /* TurntableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableViewController.h; sourceTree = "<group>"; };
 		140EB6761BEDD07800E61A81 /* TurntableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableViewController.m; sourceTree = "<group>"; };
+		140EB67C1BEEE9F300E61A81 /* EVAWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAWheelView.h; sourceTree = "<group>"; };
+		140EB67D1BEEE9F300E61A81 /* EVAWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAWheelView.m; sourceTree = "<group>"; };
+		140EB67F1BEEEA1000E61A81 /* EVAWheelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVAWheelView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +135,9 @@
 			children = (
 				140EB6751BEDD07800E61A81 /* TurntableViewController.h */,
 				140EB6761BEDD07800E61A81 /* TurntableViewController.m */,
+				140EB67C1BEEE9F300E61A81 /* EVAWheelView.h */,
+				140EB67D1BEEE9F300E61A81 /* EVAWheelView.m */,
+				140EB67F1BEEEA1000E61A81 /* EVAWheelView.xib */,
 			);
 			path = Turntable;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 		140EB63D1BEDCCCA00E61A81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EVA;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = lyh;
 				TargetAttributes = {
@@ -193,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140EB6581BEDCCCA00E61A81 /* LaunchScreen.storyboard in Resources */,
+				140EB6801BEEEA1000E61A81 /* EVAWheelView.xib in Resources */,
 				140EB6551BEDCCCA00E61A81 /* Assets.xcassets in Resources */,
 				140EB6531BEDCCCA00E61A81 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +221,7 @@
 				140EB6791BEDD07800E61A81 /* ClockViewController.m in Sources */,
 				140EB67B1BEDD07800E61A81 /* TurntableViewController.m in Sources */,
 				140EB67A1BEDD07800E61A81 /* HeartbeatViewController.m in Sources */,
+				140EB67E1BEEE9F300E61A81 /* EVAWheelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +374,7 @@
 				140EB65E1BEDCCCA00E61A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

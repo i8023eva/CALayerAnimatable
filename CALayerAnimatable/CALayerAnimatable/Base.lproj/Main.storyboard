@@ -45,7 +45,7 @@
         <!--心跳-->
         <scene sceneID="4Ln-I8-k6s">
             <objects>
-                <viewController id="Geo-AY-fKD" sceneMemberID="viewController">
+                <viewController id="Geo-AY-fKD" customClass="HeartbeatViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4QK-sU-sqT"/>
                         <viewControllerLayoutGuide type="bottom" id="Fbo-sZ-azd"/>
@@ -65,7 +65,7 @@
         <!--转盘-->
         <scene sceneID="T3G-tL-fQH">
             <objects>
-                <viewController id="xff-Tl-7Oy" sceneMemberID="viewController">
+                <viewController id="xff-Tl-7Oy" customClass="TurntableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qVu-2X-3mM"/>
                         <viewControllerLayoutGuide type="bottom" id="n6F-BA-n1B"/>
@@ -74,7 +74,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="转盘" id="Kil-rb-Lcd"/>
                 </viewController>
