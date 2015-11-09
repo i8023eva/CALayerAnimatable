@@ -54,7 +54,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="心跳" id="Taf-3W-HGc"/>
                 </viewController>
@@ -73,14 +73,59 @@
                     <view key="view" contentMode="scaleToFill" id="x26-i2-x23">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-Go-fOo">
+                                <rect key="frame" x="30" y="64" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="start:" destination="xff-Tl-7Oy" eventType="touchUpInside" id="LYi-VC-Rsl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-61-TUJ">
+                                <rect key="frame" x="540" y="64" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stop:" destination="xff-Tl-7Oy" eventType="touchUpInside" id="qK3-3E-Qzy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bIn-Go-fOo" firstAttribute="leading" secondItem="x26-i2-x23" secondAttribute="leading" constant="30" id="9ZI-gl-fVP"/>
+                            <constraint firstItem="bIn-Go-fOo" firstAttribute="top" secondItem="qVu-2X-3mM" secondAttribute="bottom" constant="44" id="EH2-tD-6va"/>
+                            <constraint firstItem="Hbw-61-TUJ" firstAttribute="top" secondItem="qVu-2X-3mM" secondAttribute="bottom" constant="44" id="G7h-LQ-V6T"/>
+                            <constraint firstItem="Hbw-61-TUJ" firstAttribute="centerY" secondItem="bIn-Go-fOo" secondAttribute="centerY" id="bFK-0w-sg0"/>
+                            <constraint firstAttribute="trailing" secondItem="Hbw-61-TUJ" secondAttribute="trailing" constant="30" id="sv8-Uw-gdb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="转盘" id="Kil-rb-Lcd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ei-f6-iMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1131" y="1235"/>
+        </scene>
+        <!--等待-->
+        <scene sceneID="vnx-fc-o1s">
+            <objects>
+                <viewController id="8TL-dv-7YO" customClass="EVAWaitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gYk-c6-FWz"/>
+                        <viewControllerLayoutGuide type="bottom" id="yT9-rH-ZeO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9vX-Z5-SzH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="等待" id="1Mo-1i-3K1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDr-51-0Z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="1748"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qf7-Vt-gV9">
@@ -96,6 +141,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fYu-hr-uuQ"/>
                         <segue destination="Geo-AY-fKD" kind="relationship" relationship="viewControllers" id="TGk-7o-WO7"/>
                         <segue destination="xff-Tl-7Oy" kind="relationship" relationship="viewControllers" id="693-QL-Qeh"/>
+                        <segue destination="8TL-dv-7YO" kind="relationship" relationship="viewControllers" id="M0t-Js-Vud"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eby-ew-y3C" userLabel="First Responder" sceneMemberID="firstResponder"/>

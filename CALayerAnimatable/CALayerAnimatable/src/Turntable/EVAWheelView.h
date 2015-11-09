@@ -11,4 +11,10 @@
 @interface EVAWheelView : UIView
 
 +(instancetype) wheelView;
+
+// 开始旋转
+- (void)startRotating;
+
+// 停止旋转
+- (void)stopRotating;
 @end

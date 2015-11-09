@@ -18,6 +18,8 @@
 		140EB67B1BEDD07800E61A81 /* TurntableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB6761BEDD07800E61A81 /* TurntableViewController.m */; };
 		140EB67E1BEEE9F300E61A81 /* EVAWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB67D1BEEE9F300E61A81 /* EVAWheelView.m */; };
 		140EB6801BEEEA1000E61A81 /* EVAWheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140EB67F1BEEEA1000E61A81 /* EVAWheelView.xib */; };
+		140EB6831BEF5CBF00E61A81 /* EVAWheelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140EB6821BEF5CBF00E61A81 /* EVAWheelButton.m */; };
+		14EA8B9B1BF0305300DD72F8 /* EVAWaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EA8B9A1BF0305300DD72F8 /* EVAWaitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		140EB67C1BEEE9F300E61A81 /* EVAWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAWheelView.h; sourceTree = "<group>"; };
 		140EB67D1BEEE9F300E61A81 /* EVAWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAWheelView.m; sourceTree = "<group>"; };
 		140EB67F1BEEEA1000E61A81 /* EVAWheelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVAWheelView.xib; sourceTree = "<group>"; };
+		140EB6811BEF5CBF00E61A81 /* EVAWheelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAWheelButton.h; sourceTree = "<group>"; };
+		140EB6821BEF5CBF00E61A81 /* EVAWheelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAWheelButton.m; sourceTree = "<group>"; };
+		14EA8B991BF0305300DD72F8 /* EVAWaitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAWaitViewController.h; sourceTree = "<group>"; };
+		14EA8B9A1BF0305300DD72F8 /* EVAWaitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAWaitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		140EB66D1BEDD07800E61A81 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				14EA8B981BF0304000DD72F8 /* Wait */,
 				140EB66E1BEDD07800E61A81 /* Clock */,
 				140EB6711BEDD07800E61A81 /* Heartbeat */,
 				140EB6741BEDD07800E61A81 /* Turntable */,
@@ -138,8 +145,19 @@
 				140EB67C1BEEE9F300E61A81 /* EVAWheelView.h */,
 				140EB67D1BEEE9F300E61A81 /* EVAWheelView.m */,
 				140EB67F1BEEEA1000E61A81 /* EVAWheelView.xib */,
+				140EB6811BEF5CBF00E61A81 /* EVAWheelButton.h */,
+				140EB6821BEF5CBF00E61A81 /* EVAWheelButton.m */,
 			);
 			path = Turntable;
+			sourceTree = "<group>";
+		};
+		14EA8B981BF0304000DD72F8 /* Wait */ = {
+			isa = PBXGroup;
+			children = (
+				14EA8B991BF0305300DD72F8 /* EVAWaitViewController.h */,
+				14EA8B9A1BF0305300DD72F8 /* EVAWaitViewController.m */,
+			);
+			path = Wait;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140EB6831BEF5CBF00E61A81 /* EVAWheelButton.m in Sources */,
 				140EB6781BEDD07800E61A81 /* ViewController.m in Sources */,
+				14EA8B9B1BF0305300DD72F8 /* EVAWaitViewController.m in Sources */,
 				140EB6771BEDD07800E61A81 /* AppDelegate.m in Sources */,
 				140EB64A1BEDCCCA00E61A81 /* main.m in Sources */,
 				140EB6791BEDD07800E61A81 /* ClockViewController.m in Sources */,

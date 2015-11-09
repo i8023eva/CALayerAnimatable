@@ -24,6 +24,9 @@
                     <animations/>
                     <state key="normal" image="LuckyCenterButton"/>
                     <state key="highlighted" image="LuckyCenterButtonPressed"/>
+                    <connections>
+                        <action selector="didClickSelected:" destination="N69-O5-pNl" eventType="touchUpInside" id="nTh-Wk-8sS"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>
@@ -37,7 +40,7 @@
             <connections>
                 <outlet property="rotateImageView" destination="R33-Vy-cZM" id="1Gi-0T-4ll"/>
             </connections>
-            <point key="canvasLocation" x="352" y="315"/>
+            <point key="canvasLocation" x="77" y="63"/>
         </view>
     </objects>
     <resources>
